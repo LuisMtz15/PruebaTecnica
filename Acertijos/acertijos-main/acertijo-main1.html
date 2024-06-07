@@ -19,14 +19,82 @@
     <header>
         <div class="contenido-temporizador">
             <h1 class="titulo-temporizador">Tiempo restante</h1>
-            <div id="temporizador" class="temporizador"></div>
+            <div id="temporizador" class="temporizador">00:00</div>
         </div>
     </header>
 
     <main>
-        
+        <div class="operacion-principal contenedor-operacion">
+            <div class="contexto-operacion">
+                ¿Si A es menor a 5...¿Cuál es el valor de A,B,C y D?
+            </div>
+            <div class="operacion">
+                <div class="columna">
+                    <div class="valor-blanco"></div>
+                    <div class="valor-letra">A</div>
+                    <div class="valor">5</div>
+                    <div class="valor">7</div>
+                </div>
+                <div class="columna">
+                    <div class="valor">+</div>
+                    <div class="valor">2</div>
+                    <div class="valor-letra">B</div>
+                    <div class="valor">4</div>
+                </div>
+                <div class="columna">
+                    <div class="valor-blanco"></div>
+                    <div class="valor-letra">B</div>
+                    <div class="valor">6</div>
+                    <div class="valor-letra">C</div>
+                </div>
+                <div class="linea-operacion"></div>
+                <div class="columna">
+                    <div class="valor-letra">C</div>
+                    <div class="valor-letra">D</div>
+                    <div class="valor">5</div>
+                    <div class="valor">2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inputs_principal contenedor">
+            <div class="input"> <!--Valor de A-->
+                <h4>Valor de A:</h4>
+                <div class="textInputWrapper">
+                    <input placeholder="Valor A" type="text" class="textInput" oninput="validarNumero(this)">
+                </div>
+            </div>
+    
+            <div class="input"> <!--Valor de B-->
+                <h4>Valor de B:</h4>
+                <div class="textInputWrapper">
+                    <input placeholder="Valor B" type="text" class="textInput" oninput="validarNumero(this)">
+                </div>
+            </div>
+    
+            <div class="input"> <!--Valor de C-->
+                <h4>Valor de C:</h4>
+                <div class="textInputWrapper">
+                    <input placeholder="Valor C" type="text" class="textInput" oninput="validarNumero(this)">
+                </div>
+            </div>
+    
+            <div class="input"> <!--Valor de D-->
+                <h4>Valor de D:</h4>
+                <div class="textInputWrapper">
+                    <input placeholder="Valor D" type="text" class="textInput" oninput="validarNumero(this)">
+                </div>
+            </div>
+        </div>
+
+        <div class="boton-datos contenedor">
+            <button class="boton-regresar">
+                Enviar
+            </button>
+        </div>
     </main>
 
     <script src="../../js/tiempo.js"></script>
+    <script src="../../js/inputs.js"></script>
 </body>
 </html>
