@@ -16,6 +16,31 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
+
+    <div id="fondoDifuminado" class="fondo-difuminado"></div>
+    <div id="miAlerta" class="alerta-oculta">
+        <div class="contenido">
+            <p>El tiempo se te ha agotado<br>¿Quieres volver a intentarlo?</p>
+        <div class="cent">
+            <button onclick="cerrarAlertaPersonalizada()" class="bot-a">SI</button>
+            <button onclick="cerrarAlertaPersonalizada()" class="bot-a">Salir</button>
+        </div>
+        </div>
+    </div>
+
+    <div id="miAlerta-c" class="alerta-oculta">
+        <div class="contenido">
+            <p>Felicidades, ¡Lo has conseguido!<br>Danos tu nombre para ponerlo en el mural</p>
+        <div class="cent-conseguido">
+            <div class="textInputWrapper">
+                <input placeholder="Nombre" type="text" class="textInput">
+            </div>
+            <button onclick="cerrarAlertaPersonalizadVictoria()" class="bot-a">Enviar</button>
+        </div>
+        </div>
+    </div>
+
+
     <header>
         <div class="contenido-temporizador">
             <h1 class="titulo-temporizador">Tiempo restante</h1>
