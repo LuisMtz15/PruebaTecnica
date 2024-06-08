@@ -1,6 +1,6 @@
 
 var temporizadorElemento = document.getElementById('temporizador');
-var tiempoRestante = 60;
+var tiempoRestante = 3;
 var contenidoPrincipal = document.getElementsByTagName("main")[0];
 
 var temporizador = setInterval(function() {

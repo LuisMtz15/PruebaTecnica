@@ -338,7 +338,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin-top: 10rem;
 }
 .titulo-tabla{
@@ -730,5 +730,77 @@ tr:hover {
 .contenedor-cifrado{
     margin-bottom: 5rem;
 }
+
+@media (max-width: 1100px){
+    .resultados-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        gap: 5rem;
+    }
+    .inputs_principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .boton-datos{
+        margin-bottom: 10rem;
+    }
+    .acertijo-regresar{
+        margin-bottom: 10rem;
+    }
+    .acertijo-texto p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .header-titulo h1{
+        font-size: 5rem;
+    }
+    .header-titulo{
+        margin-bottom: 8rem;
+    }
+    
+
+    .contenedor-acertijos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .acertijo-texto p{
+        font-size: 2rem;
+    }
+
+    .operacion-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .contexto-operacion {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+    .contenido-temporizador{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .temporizador{
+        font-size: 3rem;
+    }
+    
+}
+
+
 
 
