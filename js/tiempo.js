@@ -1,6 +1,6 @@
 
 var temporizadorElemento = document.getElementById('temporizador');
-var tiempoRestante = 4;
+var tiempoRestante = 60;
 var contenidoPrincipal = document.getElementsByTagName("main")[0];
 
 var temporizador = setInterval(function() {
@@ -37,4 +37,14 @@ function cerrarAlertaPersonalizadVictoria() {
     fondoDifuminado.style.display = "none";
     contenidoPrincipal.classList.remove("opaco");
     document.getElementById("miAlerta-c").style.display = "none";
+}
+
+
+function cerrarAlertaPersonalizadaIncorrecta2() {
+    var fondoDifuminado = document.getElementById("fondoDifuminado");
+    var contenidoPrincipal = document.getElementsByTagName("main")[0];
+
+    fondoDifuminado.style.display = "none";
+    contenidoPrincipal.classList.remove("opaco");
+    document.getElementById("miAlertaIncorrecta").style.display = "none";
 }
