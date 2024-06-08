@@ -17,7 +17,7 @@ export function Principal() {
     const obtenerResultadosAcertijo1 = async () => {
       await delay(1000);
       try {
-        const response = await fetch('https://pruebatecnicareact.onrender.com/acertijos/acertijo1');
+        const response = await fetch('http://localhost:3000/acertijos/acertijo1');
         if (!response.ok) {
           throw new Error('Error al obtener resultados de acertijo 1');
         }
@@ -35,7 +35,7 @@ export function Principal() {
     const obtenerResultadosAcertijo2 = async () => {
       await delay(1000);
       try {
-        const response = await fetch('https://pruebatecnicareact.onrender.com/acertijos/acertijo2');
+        const response = await fetch('http://localhost:3000/acertijos/acertijo2');
         if (!response.ok) {
           throw new Error('Error al obtener resultados de acertijo 2');
         }
@@ -53,7 +53,7 @@ export function Principal() {
     const obtenerResultadosAcertijo3 = async () => {
       await delay(1000);
       try {
-        const response = await fetch('https://pruebatecnicareact.onrender.com/acertijos/acertijo3');
+        const response = await fetch('http://localhost:3000/acertijos/acertijo3');
         if (!response.ok) {
           throw new Error('Error al obtener resultados de acertijo 3');
         }

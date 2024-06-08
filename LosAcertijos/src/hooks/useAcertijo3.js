@@ -12,7 +12,7 @@ export const useAcertijo3 = () => {
         const data = { usuario: nombre, tiempo: tiempo };
         
         try {
-          const response = await fetch('https://pruebatecnicareact.onrender.com/acertijos/agregar-acertijo3', {
+          const response = await fetch('http://localhost:3000/acertijos/agregar-acertijo3', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
