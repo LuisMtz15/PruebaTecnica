@@ -719,6 +719,13 @@ tr:hover {
     align-items: center;
 }
 
+.instrucciones-acertijo span{
+    font-family: var(--fuenteContador);
+}
+.luna{
+    margin-bottom: 3rem;
+}
+
 /*Acertijo 3*/
 .contenedor-cifrado{
     margin-bottom: 5rem;
