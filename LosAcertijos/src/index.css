@@ -1,7 +1,7 @@
 
 :root {
-  --fuenteContador: "Bungee Spice", sans-serif;
-  --fuenteheading: "Nabla", system-ui;
+  --fuenteContador: "Permanent Marker", cursive;
+  --fuenteheading: "Permanent Marker", cursive;
   --fuenteparrafos: "Anton", sans-serif;
   --Extra: "Merriweather", serif;
   --amarillo: #d4af37;
@@ -164,11 +164,13 @@ img{
 
 .contenido p {
   font-family: var(--fuenteContador);
+  color: var(--amarillo);
 }
 
 /*Header*/
 .header-titulo{
   margin-bottom: 10rem;
+  color: var(--amarillo);
 }
 
 /*Botones*/
@@ -297,7 +299,7 @@ img{
 }
 .titulo-tabla{
   font-size: 1rem !important;
-  color: #FFF;
+  color: var(--amarillo);
   margin-bottom: 5rem;
   text-align: center;
 }
@@ -453,7 +455,7 @@ tr:hover {
 }
 .titulo-temporizador{
   font-size: 2.5rem;
-  color: #FFF;
+  color: var(--amarillo);
   max-width: 100rem;
   width: 90%;
   text-align: center;
@@ -463,6 +465,7 @@ tr:hover {
 .temporizador{
   font-family: var(--fuenteContador);
   font-size: 6.5rem;
+  color: var(--respeto);
 }
 
 /*Acertijo 1*/
