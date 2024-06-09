@@ -33,7 +33,7 @@ export const useAcertijo2 = () => {
 
     // Función para validar la respuesta del acertijo
     function validarRespuesta(pararTiempoFunc) {
-        if (valor === '40') {
+        if (valor === '50') {
             var fondoDifuminado = document.getElementById("fondoDifuminado");
             var contenidoPrincipal = document.getElementsByTagName("main")[0];
             if (fondoDifuminado) {
