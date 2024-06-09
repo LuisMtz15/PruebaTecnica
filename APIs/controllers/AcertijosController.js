@@ -1,6 +1,7 @@
 const {Acertijo1, Acertijo2, Acertijo3} = require('../models/Acertijos');
 const { Op } = require('sequelize');
 
+// Obtener acertijos
 exports.ObtenerAcertijo1 = async (req, res) => {
     try {
         const acertijos = await Acertijo1.findAll({ attributes: ['usuario', 'tiempo'] });
@@ -17,6 +18,7 @@ exports.ObtenerAcertijo1 = async (req, res) => {
     }
 }
 
+// Agregar acertijo
 exports.AgrergarAcertijo1 = async (req, res) => {
     const {usuario, tiempo} = req.body;
     try {
@@ -28,6 +30,7 @@ exports.AgrergarAcertijo1 = async (req, res) => {
     }
 }
 
+// Obtener acertijos para el acertijo 2
 exports.ObtenerAcertijo2 = async (req, res) => {
     try {
         const acertijos = await Acertijo2.findAll({ attributes: ['usuario', 'tiempo'] });
@@ -44,6 +47,7 @@ exports.ObtenerAcertijo2 = async (req, res) => {
     }
 }
 
+// Agregar acertijo para el acertijo 2
 exports.AgrergarAcertijo2 = async (req, res) => {
     const {usuario, tiempo} = req.body;
     try {
@@ -55,6 +59,7 @@ exports.AgrergarAcertijo2 = async (req, res) => {
     }
 }
 
+// Obtener acertijos para el acertijo 3
 exports.ObtenerAcertijo3 = async (req, res) => {
     try {
         const acertijos = await Acertijo3.findAll({ attributes: ['usuario', 'tiempo'] });
@@ -71,7 +76,7 @@ exports.ObtenerAcertijo3 = async (req, res) => {
     }
 }
 
-
+// Agregar acertijo para el acertijo 3
 exports.AgrergarAcertijo3 = async (req, res) => {
     const {usuario, tiempo} = req.body;
     try {

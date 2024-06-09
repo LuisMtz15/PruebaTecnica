@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
+// Definir los modelos de la base de datos por cada acertijo
 const Acertijo1 = sequelize.define('Acertijo1', {
   id: {
     type: DataTypes.INTEGER,
@@ -50,4 +51,5 @@ const Acertijo2 = sequelize.define('Acertijo2', {
     }
   },{freezeTableName: true});
 
+// Exportar los modelos
 module.exports = {Acertijo1, Acertijo2, Acertijo3};
