@@ -3,12 +3,14 @@ import { useTiempo } from "../hooks/useTiempo";
 import { useAcertijo2 } from "../hooks/useAcertijo2";
 
 
-
+// Componente funcional que renderiza la vista del acertijo 2 en juego
 export function Acertijo2Main() {
+    // Extraer funciones y estados del hook useTiempo
     const {tiempoFormateado, cerrarAlertaPersonalizada, cerrarAlertaPersonalizadVictoria, cerrarAlertaPersonalizadaIncorrecta, pararTiempo,InputChange, nombre} = useTiempo();
-
+    // Extraer funciones y estados del hook useAcertijo2
     const {handleInputChange, valor, validarRespuesta, handleSubmit} = useAcertijo2();
 
+    // Función para manejar el click en el botón de la alerta personalizada
     function handleButtonClick() {
         handleSubmit(nombre, tiempoFormateado);
         cerrarAlertaPersonalizadVictoria();

@@ -2,11 +2,14 @@ import {useTiempo} from '../hooks/useTiempo';
 import { Link } from 'react-router-dom';
 import {useAcertijo1} from '../hooks/useAcertijo1';
 
-
+// Componente funcional que renderiza la vista del acertijo en juego
 export function AcertijoMain() {
+    // Extraer funciones y estados del hook useTiempo
     const {tiempoFormateado, cerrarAlertaPersonalizada, cerrarAlertaPersonalizadVictoria, cerrarAlertaPersonalizadaIncorrecta, pararTiempo,InputChange, nombre} = useTiempo();
+    // Extraer funciones y estados del hook useAcertijo1
     const {handleInputChange, valorA, valorB, valorC, valorD, setValorA, setValorB, setValorC, setValorD,validarRespuesta, handleSubmit} = useAcertijo1();
 
+    // Función para manejar el click en el botón de la alerta personalizada
     function handleButtonClick() {
         handleSubmit(nombre, tiempoFormateado);
         cerrarAlertaPersonalizadVictoria();

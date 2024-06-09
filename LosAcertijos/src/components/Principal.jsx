@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 export function Principal() {
 
+  // Estados para almacenar resultados, intentos y rondas
   const [resultadosAcertijo1, setResultadosAcertijo1] = useState([]);
   const [resultadosAcertijo2, setResultadosAcertijo2] = useState([]);
   const [resultadosAcertijo3, setResultadosAcertijo3] = useState([]);
@@ -10,9 +11,11 @@ export function Principal() {
   const [rounds, setRounds] = useState(0);
   const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+  // Constantes para establecer límites de intentos y rondas
   const maxIntentos = 40;
   const maxRounds = 1;
 
+  // Obtener resultados de acertijos al cargar componente y reintentar si falla la petición hasta alcanzar el límite de intentos. Esto mediante un get request a la API de los acertijos.
   useEffect(() => {
     const obtenerResultadosAcertijo1 = async () => {
       await delay(1000);
@@ -31,7 +34,7 @@ export function Principal() {
         }
       }
     };
-
+    // Función para obtener resultados de acertijo 2 mediante un get request a la API de los acertijos.
     const obtenerResultadosAcertijo2 = async () => {
       await delay(1000);
       try {
@@ -50,6 +53,7 @@ export function Principal() {
       }
     };
 
+    //Fucion para obtener resultados de acertijo 3 mediante un get request a la API de los acertijos.
     const obtenerResultadosAcertijo3 = async () => {
       await delay(1000);
       try {
@@ -75,6 +79,7 @@ export function Principal() {
     }
   }, [intentos, rounds]);
 
+  // Verificar si se alcanzó el límite de intentos y reiniciar intentos y aumentar rondas(Esto, solo por inactividad de Render)
   useEffect(() => {
     if (intentos >= maxIntentos && rounds < maxRounds) {
       setIntentos(0);
@@ -84,7 +89,7 @@ export function Principal() {
 
 
 
-
+  // Renderizar componente
   return (
     <>
     <header>

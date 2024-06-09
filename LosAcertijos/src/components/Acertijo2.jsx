@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Componente funcional que renderiza la vista del acertijo 2
 export function Acertijo2() {
   return (
    <>

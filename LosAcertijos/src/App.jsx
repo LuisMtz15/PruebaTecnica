@@ -8,6 +8,7 @@ import { AcertijoMain } from './components/Acertijo-main';
 import { Acertijo2Main } from './components/Acertijo2-main';
 import { Acertijo3Main } from './components/Acertijo3-main';
 
+// Componente funcional que renderiza las rutas de la aplicación
 function App() {
   return (
     <Router>
